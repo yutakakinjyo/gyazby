@@ -1,5 +1,7 @@
 # Gyazby
 
+This code do not work.
+
 ## Installation
 
 Add this line to your application's Gemfile:
