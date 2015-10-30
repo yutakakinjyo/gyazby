@@ -1,6 +1,8 @@
 # Gyazby
 
-This code do not work.
+Gyazo API Wrapper in ruby.  
+
+`Gyazo + ruby = Gyazby :-) have fun.`
 
 ## Installation
 
@@ -19,8 +21,6 @@ Or install it yourself as:
     $ gem install gyazby
 
 ## Usage
-
-TODO: Write usage instructions here
 
 ### Client
 
@@ -42,14 +42,14 @@ you get image object list.
 ### Upload
 
 ```ruby
-  result = @client.upload("image_path")
+  result = client.upload("image_path")
   puts result.permalink_url
 ```
 
 ### Delete
 
 ```ruby
-  result = @client.delete(image_id)
+  result = client.delete(image_id)
   puts result.permalink_url
 ```
 
