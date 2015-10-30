@@ -1,6 +1,8 @@
 # Gyazby
 
-This code do not work.
+Gyazo API Wrapper in ruby.  
+
+`Gyazo + ruby = Gyazby :-) have fun.`
 
 ## Installation
 
@@ -20,7 +22,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Client
+
+Client need gyazo access token. [regist Gyazo Application](https://gyazo.com/oauth/applications)
+
+```ruby
+  client = Cyazby::Client.new('your_access_token')
+```
+
+### List
+
+you get image object list.
+
+```ruby
+  images = client.list
+  images.each { |image| puts image.image_id }
+```
+
+### Upload
+
+```ruby
+  result = client.upload("image_path")
+  puts result.permalink_url
+```
+
+### Delete
+
+```ruby
+  result = client.delete(image_id)
+  puts result.permalink_url
+```
 
 ## Development
 
