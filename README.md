@@ -22,6 +22,37 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+### Client
+
+Client need gyazo access token. [regist Gyazo Application](https://gyazo.com/oauth/applications)
+
+```ruby
+  client = Cyazby::Client.new('your_access_token')
+```
+
+### List
+
+you get image object list.
+
+```ruby
+  images = client.list
+  images.each { |image| puts image.image_id }
+```
+
+### Upload
+
+```ruby
+  result = @client.upload("image_path")
+  puts result.permalink_url
+```
+
+### Delete
+
+```ruby
+  result = @client.delete(image_id)
+  puts result.permalink_url
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
