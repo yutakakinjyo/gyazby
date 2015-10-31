@@ -1,5 +1,7 @@
 # Gyazby
 
+[![Circle CI](https://circleci.com/gh/yutakakinjyo/gyazby.svg?style=svg)](https://circleci.com/gh/yutakakinjyo/gyazby)
+
 Gyazo API Wrapper in ruby.  
 
 `Gyazo + ruby = Gyazby :-) have fun.`
